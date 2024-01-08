@@ -1,0 +1,133 @@
+.resident__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 280px;
+}
+
+.app-title {
+  background-image: url(./assets/img/morty-banner.png);
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 500px;
+  height: 500px;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.app-title:hover {
+  transform: scale(1.010);
+  box-shadow: 0 0 1.3em whitesmoke;
+}
+
+.resident__inputSearch {
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+  border: 3px solid #f7a842;
+  font-size: 1rem;
+  font-weight: bold;
+  color:rgb(6, 6, 78);
+}
+
+.resident__buttonSearch {
+  background-color: #f7a842;
+  color:rgb(6, 6, 78);
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.resident__buttonSearch:hover {
+  background-color: white;
+  color: #f7a842;
+  border-radius: 10px;
+}
+
+.app-form {
+  display: flex;
+  gap: 1em;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.pagination button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: none;
+  background-color: #f7a842;
+  color: rgb(6, 6, 78);
+  font-weight: bold;
+}
+
+.pagination button.active {
+  background-color: #f7a842;
+}
+
+.resident__not {
+  color: rgb(6, 6, 78);
+  top: 50%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  text-shadow: 0 0 8px #f7a842;
+}
+
+.resident__not__image {
+  background-image: url(./assets/img/morty-error2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: rgb(6, 6, 78);
+  width: 250px;
+  max-width: 300px; 
+  height: 250px;
+  max-height: 300px; 
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: block;
+}
+
+
+@media (max-width: 550px) {
+  .app-title {
+    background-image: url(./assets/img/morty-banner2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70vw;
+    height: 20vh;
+    margin-bottom: -30px;
+  }
+
+  .resident__buttonSearch {
+    background-color: #f7a842;
+    color: rgb(6, 6, 78);
+    border-radius: 10px;
+    width: 70px;
+  }
+
+}
